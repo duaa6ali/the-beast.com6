@@ -1,0 +1,249 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9C2007;
+    margin: 0px;
+}
+
+p {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+}
+
+.header {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    padding: 20px 50px;
+    margin: 0;
+}
+
+
+.logo-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo {
+    max-width: 170px;
+    width: 100%;
+    height: auto;
+}
+
+.title {
+    color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: "Science Gothic";
+
+}
+
+.header-links a {
+    color: white;
+    padding: 10 35px;
+    text-decoration: none;
+    border-radius: 30px;
+}
+
+.header-links a:hover {
+    background-color: rgb(255, 98, 98);
+}
+
+.header-links button {
+    background-color: white;
+    color: red;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+
+.header-links button:hover {
+    background-color: rgb(227, 227, 227);
+}
+
+
+.landingpage-img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.landing-page {
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+    border-radius: 0 0 50px 50px;
+    margin: 0px;
+}
+
+.slide-in {
+    color: white;
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+    transform: translateX(-50px);
+    animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.landing-page-search input {
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    height: auto;
+    max-width: 400px;
+    width: 100%;
+    padding: 0 10 0 10;
+}
+
+.landing-page-search button {
+    position: absolute;
+    left: 400px;
+    align-items: center;
+    height: auto;
+    background-color: rgb(233, 70, 70);
+    color: white;
+    border: none;
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+
+.landing-page-search button:hover {
+    background-color: rgb(255, 0, 0);
+}
+
+.landing-page-search {
+    padding: 95 0 0 0
+}
+
+.view-all-button {
+    height: 30px;
+    max-width: 100px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 30px;
+
+}
+
+.popular-products button:hover {
+    background-color: rgba(227, 227, 227, 0.512);
+}
+
+
+.products-container {
+    padding: 20px 50px;
+}
+
+.popular-products {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+.popular-products h1 {
+    color: white;
+}
+
+.cards img {
+    max-width: 250px;
+    width: 100%;
+    border-radius: 25px 25px 0 0;
+}
+
+
+.cards {
+    max-width: 250px;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cards:hover {
+    transform: scale(1.1);
+}
+
+.card-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 5px 25px;
+    border-radius: 0 0 25px 25px;
+
+}
+
+.card-info img {
+    max-width: 110px;
+    width: 100%;
+}
+
+.card-name {
+    color: white;
+}
+
+.trending-cards {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 50px;
+    gap: 25px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+
+    .header {
+        width: 100%;
+        padding: clamp(12px, 4vw, 20px);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .landing-page {
+        width: 100%;
+        padding: clamp(12px, 4vw, 20px);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .products-container {
+        width: 100%;
+        padding: clamp(12px, 4vw, 20px);
+    }
+}
